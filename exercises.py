@@ -1,4 +1,71 @@
-##########################
+#
+# 1)
+# Create a function called "dictionary_maker"
+# that has one parameter: a list of 2-tuples.
+# It should return the same data in the form
+# of a dictionary, where the first element
+# of every tuple is the key and the second
+# element is the value.
+#
+# For example, if given: [('foo', 1), ('bar', 3)]
+# it should return {'foo': 1, 'bar': 3}
+#
+# NOTE: Don't use any built-in functions!
+
+
+
+############################################
+############################################
+#
+# You are given data from a website that
+# has people's CVs. The data comes
+# as a list of dictionaries and each
+# dictionary looks like this:
+#
+# { 'user': 'foo', 'jobs': ['bar', 'baz', 'qux']}
+#
+# we will refer to this as a "CV".
+#
+############################################
+############################################
+
+
+
+#
+# 2)
+# Create a function called "has_experience_as"
+# that has two parameters:
+# 1. A list of CV's.
+# 2. A string (job_title)
+#
+# The function should return a list of strings
+# representing the usernames of every user that
+# has worked as job_title.
+
+
+
+#
+# 3)
+# Create a function, called "most_popular_job"
+# that has one parameter: a list of CV's, and
+# returns a tuple (str, int) that represents
+# the title of the most popular job and the number
+# of times it was held by people on the site.
+
+
+
+#
+# 4)
+# Create a function, called "restless_user"
+# that has one parameter: a list of CV's, and
+# returns a string, with the name of the user
+# who has held the most jobs (assume jobs are
+# unique within a user).
+
+
+
+############################################
+############################################
 # Scoreboard
 #
 # In this part we will pretend
@@ -12,7 +79,8 @@
 # 2. Some separate functions that
 #    use the User class.
 #
-##########################
+############################################
+############################################
 
 
 #
