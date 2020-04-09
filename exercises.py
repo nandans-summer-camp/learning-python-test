@@ -84,7 +84,7 @@
 
 
 #
-# 1)
+# 5)
 # Create a class called "User"
 #
 # The class should be instantiated
@@ -93,7 +93,7 @@
 #
 #
 #
-# 2)
+# 6)
 # Add methods "add_score" and
 # "get_scores" to the User class.
 #
@@ -116,7 +116,7 @@
 #
 #
 #
-# 3)
+# 7)
 # Modify the "add_score" method
 # so that it throws an error if the
 # "score" it is given is not an integer
@@ -124,7 +124,7 @@
 #
 #
 #
-# 4)
+# 8)
 # Create a "top_score" method
 # that has one parameter: "level"
 # and returns the user's top score
@@ -135,7 +135,7 @@
 
 
 #
-# 5)
+# 9)
 # Now create a separate function
 # called "top_player" that has two
 # parameters:
@@ -148,14 +148,14 @@
 
 
 #
-# 6)
+# 10)
 # Now modify the function "top_player"
 # so that it returns None if given a level
 # that no player has played
 
 
 #
-# 7)
+# 11)
 # Create a separate function
 # called "best_scores".
 #
