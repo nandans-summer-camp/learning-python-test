@@ -46,21 +46,29 @@
 
 #
 # 3)
-# Create a function, called "most_popular_job"
-# that has one parameter: a list of CV's, and
-# returns a tuple (str, int) that represents
-# the title of the most popular job and the number
-# of times it was held by people on the site.
+# Create a function called "job_counts"
+# that has one parameter: list of CV's
+# and returns a dictionary where the
+# keys are the job titles and the values
+# are the number of users that have done
+# that job.
 
 
 
 #
 # 4)
-# Create a function, called "restless_user"
+# Create a function, called "most_popular_job"
 # that has one parameter: a list of CV's, and
-# returns a string, with the name of the user
-# who has held the most jobs (assume jobs are
-# unique within a user).
+# returns a tuple (str, int) that represents
+# the title of the most popular job and the number
+# of times it was held by people on the site.
+#
+# HINT: You should probably use your "job_counts"
+# function!
+#
+# HINT: You can use the method '.items' on
+# dictionaries to iterate over them like a
+# list of tuples.
 
 
 
