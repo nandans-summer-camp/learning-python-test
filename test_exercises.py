@@ -44,7 +44,7 @@ def test_most_popular_job():
            {'user': 'baz', 'jobs': ['dancer', 'waitstaff']},
            {'user': 'qux', 'jobs': ['wrecking ball operator']}]
 
-    assert most_popular_job(cvs) == 'wrecking ball operator'
+    assert most_popular_job(cvs) == ('wrecking ball operator', 3)
 
 
 
