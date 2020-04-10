@@ -1,6 +1,54 @@
 from exercises import *
 import pytest
 
+
+def test_dictionary_maker():
+    li = [('foo', 1), ('bar', 3)]
+    assert dictionary_maker(li) == {'foo': 1, 'bar': 3}
+
+    li = []
+    assert dictionary_maker(li) == {}
+
+
+def test_has_experience_as():
+    cvs = [{'user': 'foo', 'jobs': ['data monkey', 'copyist', 'wrecking ball operator']},
+           {'user': 'bar', 'jobs': ['wrecking ball operator', 'poet']},
+           {'user': 'baz', 'jobs': ['dancer', 'waitstaff']},
+           {'user': 'qux', 'jobs': ['wrecking ball operator']}]
+
+    assert has_experience_as(cvs, 'dancer') == ['baz']
+    assert has_experience_as(cvs, 'poet') == ['bar']
+
+    wreckers = has_experience_as(cvs, 'wrecking ball operator')
+    assert len(wreckers) == 3
+    for user in ['bar', 'foo', 'qux']:
+        assert user in wreckers
+
+def test_job_counts():
+    cvs = [{'user': 'foo', 'jobs': ['data monkey', 'copyist', 'wrecking ball operator']},
+           {'user': 'bar', 'jobs': ['wrecking ball operator', 'poet']},
+           {'user': 'baz', 'jobs': ['dancer', 'waitstaff']},
+           {'user': 'qux', 'jobs': ['wrecking ball operator', 'waitstaff']}]
+
+    assert job_counts(cvs) == { 'dancer': 1,
+                                'waitstaff': 2,
+                                'wrecking ball operator': 3,
+                                'copyist': 1,
+                                'poet': 1,
+                                'data monkey': 1}
+
+
+def test_most_popular_job():
+    cvs = [{'user': 'foo', 'jobs': ['data monkey', 'copyist', 'wrecking ball operator']},
+           {'user': 'bar', 'jobs': ['wrecking ball operator', 'poet']},
+           {'user': 'baz', 'jobs': ['dancer', 'waitstaff']},
+           {'user': 'qux', 'jobs': ['wrecking ball operator']}]
+
+    assert most_popular_job(cvs) == 'wrecking ball operator'
+
+
+
+
 def test_user_class_has_name():
     user = User('foo')
     assert user.name == 'foo'
